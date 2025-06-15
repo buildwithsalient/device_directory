@@ -463,7 +463,7 @@
     ]
   },
   {
-    "name": "Walter IoT SoM",
+    "name": "Walter",
     "description": "Open source cellular, GPS, and WiFi/BLE module. Combines ESP32-S3 SoC with Sequans GM02SP LTE-M/NB-IoT 5G modem and GNSS receiver. Features Wi-Fi b/g/n, Bluetooth 5.0, ultra-low power deep sleep, and is pin-compatible with PyCom GPy. Fully certified (FCC, CE, UKCA, IC, RCM). Open hardware and software.",
     "manufacturer": "DPTechnics",
     "brand": "DPTechnics",
