@@ -1,0 +1,41 @@
+[
+  {
+    "name": "M5Stack ATOM Matrix ESP32",
+    "description": "Compact IoT development device with 5x5 RGB LED matrix, integrated buttons, and expansion possibilities. Perfect for small monitoring applications and prototyping.",
+    "manufacturer": "M5Stack",
+    "type": "HAM",
+    "frequency_range": "2.4 GHz",
+    "power_output": 0.01,
+    "price": 19.95,
+    "software": "UIFlow v1.10.5",
+    "connectivity": ["Bluetooth", "WiFi", "USB", "Serial"],
+    "purchase_date": "2025-05-24",
+    "purchase_url": "https://shop.m5stack.com/products/atom-matrix-esp32-development-kit"
+  },
+  {
+    "name": "RAK WisBlock Starter Kit",
+    "description": "Modular IoT development platform with stackable blocks including core, sensor, and wireless modules. Designed for rapid prototyping of IoT solutions.",
+    "manufacturer": "RAK Wireless",
+    "type": "HAM",
+    "frequency_range": "868/915/923 MHz",
+    "power_output": 0.1,
+    "price": 89.99,
+    "software": "RUI v3.5.1",
+    "connectivity": ["Bluetooth", "WiFi", "USB"],
+    "purchase_date": "2025-05-19",
+    "purchase_url": "https://store.rakwireless.com/products/wisblock-starter-kit"
+  },
+  {
+    "name": "T1000 E",
+    "description": "ESP32-based LoRa + GPS development board designed for IoT applications with long-range communication needs. Popular for Meshtastic implementations.",
+    "manufacturer": "LilyGO",
+    "type": "HAM",
+    "frequency_range": "433/868/915 MHz",
+    "power_output": 0.5,
+    "price": 39.99,
+    "software": "Meshtastic v1.3.52",
+    "connectivity": ["Bluetooth", "WiFi", "USB"],
+    "purchase_date": "2025-05-22",
+    "purchase_url": "https://www.lilygo.cc/products/t1000-e"
+  }
+]

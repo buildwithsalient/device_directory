@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Radio Device Database Schema",
+  "description": "Schema for validating device entries in the radio device directory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200,
+        "description": "Full product name"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 1000,
+        "description": "Detailed description of the device and its capabilities"
+      },
+      "manufacturer": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100,
+        "description": "Company or brand name"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["HAM", "IoT", "LoRa", "Cellular", "WiFi", "Bluetooth", "Zigbee", "Other"],
+        "description": "Device category"
+      },
+      "frequency_range": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100,
+        "description": "Operating frequency specification"
+      },
+      "power_output": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1000,
+        "description": "Power output in watts"
+      },
+      "price": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 100000,
+        "description": "Current price in USD"
+      },
+      "software": {
+        "type": ["string", "null"],
+        "maxLength": 200,
+        "description": "Software/firmware information"
+      },
+      "connectivity": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["Bluetooth", "WiFi", "USB", "Serial", "Ethernet", "LoRa", "Cellular", "Zigbee", "I2C", "SPI", "UART", "CAN", "Other"]
+        },
+        "minItems": 1,
+        "uniqueItems": true,
+        "description": "Array of connectivity options"
+      },
+      "purchase_date": {
+        "type": ["string", "null"],
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "description": "Purchase date in YYYY-MM-DD format"
+      },
+      "purchase_url": {
+        "type": ["string", "null"],
+        "format": "uri",
+        "maxLength": 500,
+        "description": "Direct link to purchase the device"
+      }
+    },
+    "required": ["name", "description", "manufacturer", "type", "frequency_range", "power_output", "price", "connectivity"],
+    "additionalProperties": false
+  }
+}
