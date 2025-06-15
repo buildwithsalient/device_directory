@@ -26,7 +26,7 @@
     "purchase_url": "https://store.rakwireless.com/products/wisblock-starter-kit"
   },
   {
-    "name": "T1000 E",
+    "name": "T1000 E TESTING123",
     "description": "ESP32-based LoRa + GPS development board designed for IoT applications with long-range communication needs. Popular for Meshtastic implementations.",
     "manufacturer": "LilyGO",
     "type": "HAM",
