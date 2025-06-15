@@ -48,8 +48,8 @@
         "description": "Current price in USD"
       },
       "software": {
-        "type": ["string", "null"],
-        "maxLength": 200,
+        "type": "array",
+        "items": { "type": "string" },
         "description": "Software/firmware information"
       },
       "connectivity": {
@@ -179,7 +179,7 @@
         "description": "Array of radio interfaces (type, antenna, chip)"
       }
     },
-    "required": ["name", "description", "manufacturer", "type", "frequency_range", "power_output", "price", "connectivity"],
+    "required": ["name", "description", "manufacturer", "type", "frequency_range", "power_output", "price", "connectivity", "software"],
     "additionalProperties": false
   }
 }
