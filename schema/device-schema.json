@@ -172,7 +172,12 @@
                 "type": { "type": ["string", "null"], "maxLength": 100 }
               }
             },
-            "chip": { "type": ["string", "null"], "maxLength": 100 }
+            "chip": { "type": ["string", "null"], "maxLength": 100 },
+            "techniques": {
+              "type": "array",
+              "items": { "type": "string", "maxLength": 100 },
+              "description": "Supported radio techniques (e.g., NB-IoT, LTE-M)"
+            }
           },
           "required": ["type", "antenna", "chip"]
         },

@@ -34,10 +34,10 @@
     "purchase_url": "https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html",
     "charger_type": "USB magnetic cable",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "pcb trace" }, "chip": "Semtech LR1110" },
-      { "type": "Bluetooth", "antenna": { "type": "chip" }, "chip": "Nordic nRF52840" },
-      { "type": "Wi-Fi", "antenna": { "type": "pcb trace" }, "chip": null },
-      { "type": "Zigbee", "antenna": { "type": "chip" }, "chip": "Nordic nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "pcb trace" }, "chip": "Semtech LR1110", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "chip" }, "chip": "Nordic nRF52840", "techniques": [] },
+      { "type": "Wi-Fi", "antenna": { "type": "pcb trace" }, "chip": null, "techniques": [] },
+      { "type": "Zigbee", "antenna": { "type": "chip" }, "chip": "Nordic nRF52840", "techniques": [] }
     ]
   },
   {
@@ -77,8 +77,8 @@
     },
     "charger_type": "USB Type-C, solar, Li-ion",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "External (included)" }, "chip": "Wio-SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "External (included)" }, "chip": "Nordic nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "External (included)" }, "chip": "Wio-SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "External (included)" }, "chip": "Nordic nRF52840", "techniques": [] }
     ]
   },
   {
@@ -104,9 +104,9 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB Type-C, lithium battery management",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "Semtech SX1262" },
-      { "type": "WiFi", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "ESP32-S3R8" },
-      { "type": "Bluetooth", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "ESP32-S3R8" }
+      { "type": "LoRa", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "Semtech SX1262", "techniques": [] },
+      { "type": "WiFi", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "ESP32-S3R8", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "ESP32-S3R8", "techniques": [] }
     ]
   },
   {
@@ -146,9 +146,9 @@
     },
     "charger_type": "USB magnetic cable",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "Internal" }, "chip": null },
-      { "type": "Bluetooth", "antenna": { "type": "Internal" }, "chip": null },
-      { "type": "Wi-Fi", "antenna": { "type": "Internal" }, "chip": null }
+      { "type": "LoRa", "antenna": { "type": "Internal" }, "chip": null, "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "Internal" }, "chip": null, "techniques": [] },
+      { "type": "Wi-Fi", "antenna": { "type": "Internal" }, "chip": null, "techniques": [] }
     ]
   },
   {
@@ -187,7 +187,7 @@
       "size": 4.0
     },
     "radios": [
-      { "type": "LoRa", "antenna": { "type": null }, "chip": "Semtech SX1262" }
+      { "type": "LoRa", "antenna": { "type": null }, "chip": "Semtech SX1262", "techniques": [] }
     ]
   },
   {
@@ -213,8 +213,8 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
     ]
   },
   {
@@ -240,8 +240,8 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "pcb" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "pcb" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
     ]
   },
   {
@@ -267,8 +267,8 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32" }
+      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32", "techniques": [] }
     ]
   },
   {
@@ -294,8 +294,8 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "stubby" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32" }
+      { "type": "LoRa", "antenna": { "type": "stubby" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32", "techniques": [] }
     ]
   },
   {
@@ -321,10 +321,10 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "Magnetic USB",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "pcb trace" }, "chip": "Semtech LR1110" },
-      { "type": "Bluetooth", "antenna": { "type": "chip" }, "chip": "nRF52840" },
-      { "type": "Thread", "antenna": { "type": "chip" }, "chip": "nRF52840" },
-      { "type": "Zigbee", "antenna": { "type": "chip" }, "chip": "nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "pcb trace" }, "chip": "Semtech LR1110", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "chip" }, "chip": "nRF52840", "techniques": [] },
+      { "type": "Thread", "antenna": { "type": "chip" }, "chip": "nRF52840", "techniques": [] },
+      { "type": "Zigbee", "antenna": { "type": "chip" }, "chip": "nRF52840", "techniques": [] }
     ]
   },
   {
@@ -350,8 +350,8 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52850" }
+      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52850", "techniques": [] }
     ]
   },
   {
@@ -377,8 +377,8 @@
     "screen": { "present": true, "type": "EPD", "size": 1.54 },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "RP-SMA" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "RP-SMA" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
     ]
   },
   {
@@ -404,8 +404,8 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52850" }
+      { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52850", "techniques": [] }
     ]
   },
   {
@@ -431,8 +431,8 @@
     "screen": { "present": true, "type": "e-ink", "size": 2.13 },
     "charger_type": "USB-C, Qi2 wireless",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "internal" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840" }
+      { "type": "LoRa", "antenna": { "type": "internal" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
     ]
   },
   {
@@ -458,8 +458,8 @@
     "screen": { "present": true, "type": "OLED", "size": 1.3 },
     "charger_type": "USB-C",
     "radios": [
-      { "type": "LoRa", "antenna": { "type": "internal" }, "chip": "SX1262" },
-      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32-S3" }
+      { "type": "LoRa", "antenna": { "type": "internal" }, "chip": "SX1262", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32-S3", "techniques": [] }
     ]
   },
   {
@@ -495,9 +495,9 @@
     "screen": { "present": false, "type": null, "size": null },
     "charger_type": "USB Type-C",
     "radios": [
-      { "type": "Cellular", "antenna": { "type": null }, "chip": "Sequans GM02SP" },
-      { "type": "Wi-Fi", "antenna": { "type": null }, "chip": "ESP32-S3" },
-      { "type": "Bluetooth", "antenna": { "type": null }, "chip": "ESP32-S3" }
+      { "type": "Cellular", "antenna": { "type": null }, "chip": "Sequans GM02SP", "techniques": ["NB-IoT", "LTE-M"] },
+      { "type": "Wi-Fi", "antenna": { "type": null }, "chip": "ESP32-S3", "techniques": [] },
+      { "type": "Bluetooth", "antenna": { "type": null }, "chip": "ESP32-S3", "techniques": [] }
     ]
   }
 ]
