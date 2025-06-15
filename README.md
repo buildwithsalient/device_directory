@@ -24,12 +24,33 @@ Each device entry should follow this JSON structure:
   "price": 39.99,
   "software": "Optional software information",
   "connectivity": ["Bluetooth", "WiFi", "USB"],
-  "purchase_date": "2025-05-22",
+  "mcu": "MCU type/model",
+  "lora_chip": "LoRa chip/model",
+  "gps": {
+    "supported": true,
+    "type": "active",
+    "chip": "GPS chip/model"
+  },
+  "battery": {
+    "capacity_mAh": 700,
+    "type": "Rechargeable lithium",
+    "charging": "USB magnetic cable"
+  },
+  "sensors": ["3-axis accelerometer", "temperature", "light"],
+  "ip_rating": "IP65",
+  "antenna": {
+    "type": "Internal PCB stub",
+    "supported_bands": ["GNSS", "LoRa", "Wi-Fi", "BLE"]
+  },
+  "dimensions_mm": "85 x 55 x 6.5",
+  "weight_g": 32,
+  "release_date": "2025-04-15",
+  "purchase_date": "2025-06-15",
   "purchase_url": "https://your-store.com/product-link"
 }
 ```
 
-### Field Descriptions
+### Field Descriptions (updated)
 
 - **name** (required): The full product name
 - **description** (required): Detailed description of the device
@@ -40,6 +61,16 @@ Each device entry should follow this JSON structure:
 - **price** (required): Current price in USD (numeric value)
 - **software** (optional): Software/firmware information
 - **connectivity** (required): Array of connectivity options
+- **mcu** (optional): MCU type/model
+- **lora_chip** (optional): LoRa chip/model
+- **gps** (optional): Object with `supported` (boolean), `type` (active/passive), and `chip` (model)
+- **battery** (optional): Object with `capacity_mAh`, `type`, and `charging`
+- **sensors** (optional): Array of sensor types
+- **ip_rating** (optional): IP rating (e.g., "IP65")
+- **antenna** (optional): Object with `type` and `supported_bands`
+- **dimensions_mm** (optional): Device dimensions in mm
+- **weight_g** (optional): Device weight in grams
+- **release_date** (optional): Product release date (YYYY-MM-DD)
 - **purchase_date** (optional): Date format: "YYYY-MM-DD"
 - **purchase_url** (optional): Direct link to purchase the device
 

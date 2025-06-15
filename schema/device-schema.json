@@ -62,6 +62,11 @@
         "uniqueItems": true,
         "description": "Array of connectivity options"
       },
+      "release_date": {
+        "type": ["string", "null"],
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "description": "Product release date in YYYY-MM-DD format"
+      },
       "purchase_date": {
         "type": ["string", "null"],
         "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
@@ -72,6 +77,88 @@
         "format": "uri",
         "maxLength": 500,
         "description": "Direct link to purchase the device"
+      },
+      "mcu": {
+        "type": ["string", "null"],
+        "maxLength": 100,
+        "description": "MCU type/model"
+      },
+      "lora_chip": {
+        "type": ["string", "null"],
+        "maxLength": 100,
+        "description": "LoRa chip/model"
+      },
+      "gps": {
+        "type": ["object", "null"],
+        "properties": {
+          "supported": { "type": "boolean" },
+          "type": { "type": "string", "enum": ["active", "passive", "other"] },
+          "chip": { "type": ["string", "null"], "maxLength": 100 }
+        },
+        "required": ["supported", "type"],
+        "description": "GPS support details"
+      },
+      "brand": {
+        "type": ["string", "null"],
+        "maxLength": 100,
+        "description": "Brand name"
+      },
+      "battery": {
+        "type": ["object", "null"],
+        "properties": {
+          "capacity_mAh": { "type": ["number", "null"] },
+          "type": { "type": ["string", "null"], "maxLength": 100 },
+          "charging": { "type": ["string", "null"], "maxLength": 100 }
+        },
+        "description": "Battery details"
+      },
+      "sensors": {
+        "type": ["array", "null"],
+        "items": { "type": "string", "maxLength": 100 },
+        "description": "Array of sensor types"
+      },
+      "ip_rating": {
+        "type": ["string", "null"],
+        "maxLength": 20,
+        "description": "IP rating (e.g., IP65)"
+      },
+      "antenna": {
+        "type": ["object", "null"],
+        "properties": {
+          "type": { "type": ["string", "null"], "maxLength": 100 },
+          "supported_bands": {
+            "type": ["array", "null"],
+            "items": { "type": "string", "maxLength": 50 }
+          }
+        },
+        "description": "Antenna details"
+      },
+      "dimensions_mm": {
+        "type": ["object", "null"],
+        "properties": {
+          "length": { "type": ["number", "null"] },
+          "width": { "type": ["number", "null"] },
+          "height": { "type": ["number", "null"] }
+        },
+        "description": "Device dimensions in mm (length, width, height)"
+      },
+      "weight_g": {
+        "type": ["number", "null"],
+        "description": "Device weight in grams"
+      },
+      "screen": {
+        "type": ["object", "null"],
+        "properties": {
+          "present": { "type": "boolean" },
+          "type": { "type": ["string", "null"], "maxLength": 50 },
+          "size": { "type": ["number", "null"] }
+        },
+        "description": "Screen details (present, type, size in inches)"
+      },
+      "charger_type": {
+        "type": ["string", "null"],
+        "maxLength": 100,
+        "description": "Charger type (e.g., USB Type-C, magnetic)"
       }
     },
     "required": ["name", "description", "manufacturer", "type", "frequency_range", "power_output", "price", "connectivity"],

@@ -1,41 +1,573 @@
-[
-  {
-    "name": "M5Stack ATOM Matrix ESP32",
-    "description": "Compact IoT development device with 5x5 RGB LED matrix, integrated buttons, and expansion possibilities. Perfect for small monitoring applications and prototyping.",
-    "manufacturer": "M5Stack",
-    "type": "HAM",
-    "frequency_range": "2.4 GHz",
-    "power_output": 0.01,
-    "price": 19.95,
-    "software": "UIFlow v1.10.5",
-    "connectivity": ["Bluetooth", "WiFi", "USB", "Serial"],
-    "purchase_date": "2025-05-24",
-    "purchase_url": "https://shop.m5stack.com/products/atom-matrix-esp32-development-kit"
+[{
+    "name": "SenseCAP Card Tracker T1000-E for Meshtastic",
+    "description": "High-performance, credit card-sized LoRa tracker for Meshtastic. Features Semtech LR1110 (863-928 MHz) for LoRa, Nordic nRF52840 MCU for Bluetooth 5.1, Thread, Zigbee, and Mediatek AG3335 GPS for accurate location tracking. Includes 700mAh rechargeable battery, IP65 rating, 3-axis accelerometer, temperature and light sensors, USB magnetic charging, and open-source Meshtastic firmware. Rugged, portable, and ideal for off-grid communication, asset tracking, and outdoor adventure.",
+    "manufacturer": "Seeed Studio",
+    "brand": "Seeed Studio",
+    "type": "LoRa",
+    "frequency_range": "863-928 MHz",
+    "power_output": 0.05,
+    "price": 35.9,
+    "software": "Meshtastic",
+    "connectivity": ["Bluetooth", "USB", "LoRa", "Zigbee"],
+    "mcu": "Nordic nRF52840",
+    "lora_chip": "Semtech LR1110",
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": "Mediatek AG3335"
+    },
+    "battery": {
+      "capacity_mAh": 700,
+      "type": "Rechargeable lithium",
+      "charging": "USB magnetic cable"
+    },
+    "sensors": ["3-axis accelerometer", "temperature", "light"],
+    "ip_rating": "IP65",
+    "dimensions_mm": {
+      "length": 85,
+      "width": 55,
+      "height": 6.5
+    },
+    "weight_g": 32,
+    "release_date": "2025-04-15",
+    "purchase_date": "2025-06-15",
+    "purchase_url": "https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html",
+    "antenna": {
+      "type": "Internal PCB stub",
+      "supported_bands": ["GNSS", "LoRa", "Wi-Fi", "BLE"]
+    },
+    "screen": {
+      "present": false,
+      "type": null,
+      "size": null
+    },
+    "charger_type": "USB magnetic cable"
   },
   {
-    "name": "RAK WisBlock Starter KitNEWWW",
-    "description": "Modular IoT development platform with stackable blocks including core, sensor, and wireless modules. Designed for rapid prototyping of IoT solutions.",
-    "manufacturer": "RAK Wireless",
-    "type": "HAM",
-    "frequency_range": "868/915/923 MHz",
-    "power_output": 0.1,
-    "price": 89.99,
-    "software": "RUI v3.5.1",
-    "connectivity": ["Bluetooth", "WiFi", "USB"],
-    "purchase_date": "2025-05-19",
-    "purchase_url": "https://store.rakwireless.com/products/wisblock-starter-kit"
+    "name": "Wio Tracker L1 Pro",
+    "description": "Low-power, scalable Meshtastic node with LoRa (862–930 MHz), Nordic nRF52840 MCU, L76K GPS, 1.3-inch OLED display, rechargeable battery, and durable 3D-printed enclosure. Pre-flashed with Meshtastic firmware, supports Bluetooth 5.0, and offers triple power supply options (USB Type-C, solar, Li-ion). Fully compatible with Grove ecosystem and includes PTH headers and SWD debugging interface.",
+    "manufacturer": "Seeed Studio",
+    "brand": "Seeed Studio",
+    "type": "LoRa",
+    "frequency_range": "862-930 MHz",
+    "power_output": 0.05,
+    "price": 39.9,
+    "software": "Meshtastic (pre-flashed)",
+    "connectivity": ["Bluetooth", "USB", "LoRa"],
+    "mcu": "Nordic nRF52840 (ARM Cortex-M4, 64 MHz, 1MB flash, 256kB RAM)",
+    "lora_chip": "Wio-SX1262",
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": "L76K (GPS, BeiDou, GLONASS, QZSS)"
+    },
+    "battery": {
+      "capacity_mAh": null,
+      "type": "Rechargeable Li-ion",
+      "charging": "USB Type-C, solar, Li-ion"
+    },
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External (included)",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": "2025-06-15",
+    "purchase_url": "https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html",
+    "screen": {
+      "present": true,
+      "type": "OLED",
+      "size": 1.3
+    },
+    "charger_type": "USB Type-C, solar, Li-ion"
   },
   {
-    "name": "T1000 E TESTING123",
-    "description": "ESP32-based LoRa + GPS development board designed for IoT applications with long-range communication needs. Popular for Meshtastic implementations.",
-    "manufacturer": "LilyGO",
-    "type": "HAM",
-    "frequency_range": "433/868/915 MHz",
-    "power_output": 0.5,
-    "price": 39.99,
-    "software": "Meshtastic v1.3.52",
-    "connectivity": ["Bluetooth", "WiFi", "USB"],
-    "purchase_date": "2025-05-22",
-    "purchase_url": "https://www.lilygo.cc/products/t1000-e"
+    "name": "Wio SX1262 with XIAO ESP32S3",
+    "description": "Thumb-sized LoRa dev kit featuring XIAO ESP32S3 and Wio-SX1262 LoRa module. Supports WiFi, BLE 5.0, and LoRa (862-930 MHz). Pre-flashed with Meshtastic, includes power management, IIC/UART/GPIO expansion, and is Arduino/MicroPython compatible. FPC and external antenna options included.",
+    "manufacturer": "Seeed Studio",
+    "brand": "Seeed Studio",
+    "type": "LoRa",
+    "frequency_range": "862-930 MHz",
+    "power_output": null,
+    "price": 9.9,
+    "software": "Meshtastic (pre-flashed)",
+    "connectivity": ["Bluetooth", "WiFi", "LoRa", "USB"],
+    "mcu": "ESP32-S3R8, Xtensa LX7 dual-core, 32-bit, up to 240 MHz",
+    "lora_chip": "Semtech SX1262",
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": {
+      "capacity_mAh": null,
+      "type": null,
+      "charging": "USB Type-C, lithium battery management"
+    },
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "FPC and external (IPEX/SMA)",
+      "supported_bands": ["LoRa", "WiFi"]
+    },
+    "dimensions_mm": {
+      "length": 21,
+      "width": 17.8,
+      "height": null
+    },
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": "2025-06-15",
+    "purchase_url": "https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html",
+    "screen": {
+      "present": false,
+      "type": null,
+      "size": null
+    },
+    "charger_type": "USB Type-C, lithium battery management"
+  },
+  {
+    "name": "SenseCAP Card Tracker T1000-B",
+    "description": "Card-size LoRaWAN tracker for indoor and outdoor positioning. Utilizes GNSS, Wi-Fi, and Bluetooth for precise tracking. Features temperature, light, and motion sensors, panic button, buzzer, and IP65 rating. 700mAh battery, magnetic charging, and up to 4 months battery life. Ideal for logistics, asset tracking, and safety applications.",
+    "manufacturer": "Seeed Studio",
+    "brand": "Seeed Studio",
+    "type": "LoRa",
+    "frequency_range": "IN865/EU868/US915/AU915/AS923/KR920/RU864",
+    "power_output": null,
+    "price": 26.9,
+    "software": "SenseCAP Mate App, open API",
+    "connectivity": ["Bluetooth", "WiFi", "LoRa"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": "GNSS (GPS, GLONASS, Galileo, BeiDou, QZSS)"
+    },
+    "battery": {
+      "capacity_mAh": 700,
+      "type": "Rechargeable lithium",
+      "charging": "USB magnetic cable"
+    },
+    "sensors": ["temperature", "light", "motion"],
+    "ip_rating": "IP65",
+    "antenna": {
+      "type": "Internal",
+      "supported_bands": ["GNSS", "LoRa", "WiFi", "BLE"]
+    },
+    "dimensions_mm": "85 x 55 x 6.5",
+    "weight_g": 32,
+    "release_date": null,
+    "purchase_date": "2025-06-15",
+    "purchase_url": "https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-B-p-5698.html",
+    "screen": {
+      "present": false,
+      "type": null,
+      "size": null
+    },
+    "charger_type": "USB magnetic cable"
+  },
+  {
+    "name": "SenseCAP Indicator D1L",
+    "description": "4-inch capacitive touch screen IoT development platform powered by ESP32S3 & RP2040 dual-MCU. Supports Wi-Fi, BLE, and LoRa (SX1262). Open-source, with rich GPIOs, Grove expansion, and built-in tVOC and CO2 sensors. Ideal for dashboards, air quality monitoring, and smart home applications.",
+    "manufacturer": "Seeed Studio",
+    "brand": "Seeed Studio",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": 0.13,
+    "price": 52.9,
+    "software": "Open-source (customizable)",
+    "connectivity": ["Bluetooth", "WiFi", "LoRa", "USB"],
+    "mcu": "ESP32-S3 (Xtensa LX7 dual-core, 240MHz), RP2040 (Dual ARM Cortex-M0+, 133MHz)",
+    "lora_chip": "Semtech SX1262",
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": {
+      "capacity_mAh": null,
+      "type": null,
+      "charging": "USB Type-C"
+    },
+    "sensors": ["CO2 (SCD41)", "tVOC (SGP40)", "temperature/humidity (AHT20, external)"],
+    "ip_rating": null,
+    "antenna": {
+      "type": null,
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": "2025-06-15",
+    "purchase_url": "https://www.seeedstudio.com/SenseCAP-Indicator-D1L-p-5646.html",
+    "screen": {
+      "present": true,
+      "type": "capacitive touch",
+      "size": 4.0
+    }
+  },
+  {
+    "name": "R1 with External Antenna - Complete Meshtastic Device powered by RAKwireless®",
+    "brand": "RAKwireless",
+    "manufacturer": "RAKwireless",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 89.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/r1-with-external-antenna",
+    "screen": {
+      "present": false,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "R1 - Complete Meshtastic Device powered by RAKwireless®",
+    "brand": "RAKwireless",
+    "manufacturer": "RAKwireless",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 79.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "Internal",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/r1",
+    "screen": {
+      "present": false,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "H1 - Complete Device with upgraded whip antenna: Heltec V3 running Meshtastic®",
+    "brand": "Heltec",
+    "manufacturer": "Heltec",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 75.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External whip",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/h1-complete-device-with-upgraded-whip-antenna-heltec-v3-running-meshtastic",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "H1 - Complete Device: Heltec V3 running Meshtastic®",
+    "brand": "Heltec",
+    "manufacturer": "Heltec",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 65.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "Internal",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/h1-complete-device-heltec-v3-running-meshtastic",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "Seeed Studio SenseCAP Card Tracker T1000-E",
+    "brand": "Seeed Studio",
+    "manufacturer": "Seeed Studio",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 39.9,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "Internal",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/seeed-t1000e",
+    "screen": {
+      "present": false,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "Limited Edition: 1st Anniversary H2T Combo - Device and Holster",
+    "brand": "Heltec",
+    "manufacturer": "Heltec",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 119.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/le-1st-anniversary-h2t",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "Elecrow ThinkNode M1",
+    "brand": "Elecrow",
+    "manufacturer": "Elecrow",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 79.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/elecrow-thinknode-m1",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "H2T - Complete Device: Heltec T114 with GPS running Meshtastic®",
+    "brand": "Heltec",
+    "manufacturer": "Heltec",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 99.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "Heltec MeshPocket - Integrated Qi2 Power Bank",
+    "brand": "Heltec",
+    "manufacturer": "Heltec",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 79.0,
+    "software": null,
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": false,
+      "type": null,
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "Internal",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/heltec-meshpocket",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
+  },
+  {
+    "name": "Elecrow ThinkNode M2",
+    "brand": "Elecrow",
+    "manufacturer": "Elecrow",
+    "type": "LoRa",
+    "frequency_range": null,
+    "power_output": null,
+    "price": 59.0,
+    "software": "Meshtastic",
+    "connectivity": ["LoRa", "USB"],
+    "mcu": null,
+    "lora_chip": null,
+    "gps": {
+      "supported": true,
+      "type": "active",
+      "chip": null
+    },
+    "battery": null,
+    "sensors": [],
+    "ip_rating": null,
+    "antenna": {
+      "type": "External",
+      "supported_bands": ["LoRa"]
+    },
+    "dimensions_mm": null,
+    "weight_g": null,
+    "release_date": null,
+    "purchase_date": null,
+    "purchase_url": "https://muzi.works/products/elecrow-thinknode-m2",
+    "screen": {
+      "present": true,
+      "type": null,
+      "size": null
+    },
+    "charger_type": null
   }
 ]
