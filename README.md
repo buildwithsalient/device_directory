@@ -46,7 +46,23 @@ Each device entry should follow this JSON structure:
   "weight_g": 32,
   "release_date": "2025-04-15",
   "purchase_date": "2025-06-15",
-  "purchase_url": "https://your-store.com/product-link"
+  "purchase_url": "https://your-store.com/product-link",
+  "radios": [
+    {
+      "type": "LoRa",
+      "antenna": {
+        "type": "pcb trace"
+      },
+      "chip": "SX1262"
+    },
+    {
+      "type": "Bluetooth",
+      "antenna": {
+        "type": "chip"
+      },
+      "chip": "nRF52840"
+    }
+  ]
 }
 ```
 
@@ -73,6 +89,10 @@ Each device entry should follow this JSON structure:
 - **release_date** (optional): Product release date (YYYY-MM-DD)
 - **purchase_date** (optional): Date format: "YYYY-MM-DD"
 - **purchase_url** (optional): Direct link to purchase the device
+- **radios** (optional): Array of radio interfaces, each with:
+  - **type**: Radio type (e.g., "LoRa", "Wi-Fi", "Bluetooth", "Zigbee")
+  - **antenna**: Object with `type` (antenna type, e.g., "pcb trace", "chip", "external SMA")
+  - **chip**: Chip/model used for this radio (e.g., "SX1262", "nRF52840"), or null if unknown
 
 ## Submission Guidelines
 

@@ -159,6 +159,24 @@
         "type": ["string", "null"],
         "maxLength": 100,
         "description": "Charger type (e.g., USB Type-C, magnetic)"
+      },
+      "radios": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "maxLength": 50 },
+            "antenna": {
+              "type": ["object", "null"],
+              "properties": {
+                "type": { "type": ["string", "null"], "maxLength": 100 }
+              }
+            },
+            "chip": { "type": ["string", "null"], "maxLength": 100 }
+          },
+          "required": ["type", "antenna", "chip"]
+        },
+        "description": "Array of radio interfaces (type, antenna, chip)"
       }
     },
     "required": ["name", "description", "manufacturer", "type", "frequency_range", "power_output", "price", "connectivity"],
