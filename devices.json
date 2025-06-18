@@ -38,6 +38,13 @@
       { "type": "Bluetooth", "antenna": { "type": "chip" }, "chip": "Nordic nRF52840", "techniques": [] },
       { "type": "Wi-Fi", "antenna": { "type": "pcb trace" }, "chip": null, "techniques": [] },
       { "type": "Zigbee", "antenna": { "type": "chip" }, "chip": "Nordic nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-114993369-sensecap-card-tracker-t1000-e-for-meshtastic.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/_/1_21.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/_/-/_-03.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/h/q/hqdefault_128.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/x/1x1a7401.jpg"
     ]
   },
   {
@@ -79,6 +86,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "External (included)" }, "chip": "Wio-SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "External (included)" }, "chip": "Nordic nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -107,6 +118,10 @@
       { "type": "LoRa", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "Semtech SX1262", "techniques": [] },
       { "type": "WiFi", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "ESP32-S3R8", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "FPC and external (IPEX/SMA)" }, "chip": "ESP32-S3R8", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -149,6 +164,10 @@
       { "type": "LoRa", "antenna": { "type": "Internal" }, "chip": null, "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "Internal" }, "chip": null, "techniques": [] },
       { "type": "Wi-Fi", "antenna": { "type": "Internal" }, "chip": null, "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -188,6 +207,10 @@
     },
     "radios": [
       { "type": "LoRa", "antenna": { "type": null }, "chip": "Semtech SX1262", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -215,6 +238,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -242,6 +269,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "pcb" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -269,6 +300,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -296,6 +331,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "stubby" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -325,6 +364,10 @@
       { "type": "Bluetooth", "antenna": { "type": "chip" }, "chip": "nRF52840", "techniques": [] },
       { "type": "Thread", "antenna": { "type": "chip" }, "chip": "nRF52840", "techniques": [] },
       { "type": "Zigbee", "antenna": { "type": "chip" }, "chip": "nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -352,6 +395,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52850", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -379,6 +426,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "RP-SMA" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -406,6 +457,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "whip" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52850", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -433,6 +488,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "internal" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -460,6 +519,10 @@
     "radios": [
       { "type": "LoRa", "antenna": { "type": "internal" }, "chip": "SX1262", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32-S3", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
   },
   {
@@ -498,6 +561,96 @@
       { "type": "Cellular", "antenna": { "type": null }, "chip": "Sequans GM02SP", "techniques": ["NB-IoT", "LTE-M"] },
       { "type": "Wi-Fi", "antenna": { "type": null }, "chip": "ESP32-S3", "techniques": [] },
       { "type": "Bluetooth", "antenna": { "type": null }, "chip": "ESP32-S3", "techniques": [] }
+    ],
+    "assets": [
+      "",
+      ""
     ]
+  },
+  {
+    "name": "M1 Meshtastic Radio",
+    "brand": "Atlavox",
+    "assets": [
+      "https://atlavox.com/cdn/shop/files/M1-AtlavoxAnt.png?v=1735764198&width=713",
+      "https://atlavox.com/cdn/shop/files/MSD1865.jpg?v=1735845567&width=162",
+      "https://atlavox.com/cdn/shop/files/868Partslist.png?v=1748696070&width=162",
+      "https://atlavox.com/cdn/shop/files/M1-Stock.png?v=1748696070&width=162",
+      "https://atlavox.com/cdn/shop/files/M1-Case-NoAnt.png?v=1748696070&width=162",
+      "https://atlavox.com/cdn/shop/files/M1-GPS-AtlavoxAnt.png?v=1748696070&width=162",
+      "https://atlavox.com/cdn/shop/files/M1-GPS-Stock.png?v=1748696070&width=162"
+    ],
+    "radios": [
+      {
+        "type": "LoRa",
+        "chip": "RAK4630",
+        "antenna": { "type": "external" },
+        "techniques": ["LoRa"],
+        "frequency": ["915MHz", "868MHz"]
+      },
+      {
+        "type": "Bluetooth",
+        "chip": "RAK WisBlock Bluetooth PCB antenna",
+        "antenna": { "type": "internal" },
+        "techniques": ["Bluetooth"]
+      }
+    ],
+    "battery": {
+      "present": true,
+      "type": "Li-ion Polymer",
+      "capacity_mAh": 2000,
+      "charging": ["USB-C"],
+      "protection": ["Overcharge voltage: 4.28V", "Overdischarge voltage: 3.0V", "Overcurrent: 2000mA", "Short Circuit", "Over temperature"]
+    },
+    "charger_type": "USB-C",
+    "screen": { "present": false },
+    "gps": { "present": false, "optional": true, "chip": "RAK12500" },
+    "sensors": ["Optional: RAK1901 Temp & Humidity"],
+    "dimensions_mm": { "height": 92, "width": 58, "depth": 29 },
+    "weight_g": null,
+    "ip_rating": null,
+    "software": ["Meshtastic"],
+    "description": "Fully assembled or case-only modular Meshtastic radio with RAK WisBlock, 2000mAh battery, USB-C charging, and optional GPS/sensors. No display."
+  },
+  {
+    "name": "Beacon Solar Meshtastic Node",
+    "brand": "Atlavox",
+    "assets": [
+      "https://atlavox.com/cdn/shop/files/12.png?v=1746721666&width=713",
+      "https://atlavox.com/cdn/shop/files/7BLE.png?v=1746721666&width=162",
+      "https://atlavox.com/cdn/shop/files/12BLE.png?v=1734230056&width=162",
+      "https://atlavox.com/cdn/shop/files/32.png?v=1734230056&width=162",
+      "https://atlavox.com/cdn/shop/files/32BLE.png?v=1734230056&width=162"
+    ],
+    "radios": [
+      {
+        "type": "LoRa",
+        "chip": "RAK19007 WisBlock",
+        "antenna": { "type": "external" },
+        "techniques": ["LoRa"],
+        "frequency": ["915MHz"]
+      },
+      {
+        "type": "Bluetooth",
+        "chip": null,
+        "antenna": { "type": "internal" },
+        "techniques": ["Bluetooth"]
+      }
+    ],
+    "battery": {
+      "present": true,
+      "type": "Li-ion Polymer",
+      "capacity_mAh": 5000,
+      "charging": ["Solar", "USB"],
+      "protection": ["Overcharge voltage: 4.28V", "Overdischarge voltage: 3.0V", "Overcurrent: 2000mA", "Short Circuit", "Over temperature"]
+    },
+    "charger_type": "Solar, USB",
+    "screen": { "present": false },
+    "gps": { "present": false },
+    "sensors": [],
+    "dimensions_mm": { "height": 257, "width": 140, "depth": 102 },
+    "weight_g": 1000,
+    "ip_rating": "IP67",
+    "software": ["Meshtastic"],
+    "description": "Solar-powered, outdoor Meshtastic node with 5000mAh battery, IP67 enclosure, multiple mounting options, and LoRa/Bluetooth radios."
   }
 ]
