@@ -575,6 +575,7 @@
   {
     "name": "M1 Meshtastic Radio",
     "brand": "Atlavox",
+    "price": 32.99,
     "assets": [
       "https://atlavox.com/cdn/shop/files/M1-AtlavoxAnt.png?v=1735764198&width=713",
       "https://atlavox.com/cdn/shop/files/MSD1865.jpg?v=1735845567&width=162",
@@ -619,6 +620,7 @@
   {
     "name": "Beacon Solar Meshtastic Node",
     "brand": "Atlavox",
+    "price": 235.99,
     "assets": [
       "https://atlavox.com/cdn/shop/files/12.png?v=1746721666&width=713",
       "https://atlavox.com/cdn/shop/files/7BLE.png?v=1746721666&width=162",
