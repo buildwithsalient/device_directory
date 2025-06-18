@@ -88,8 +88,11 @@
       { "type": "Bluetooth", "antenna": { "type": "External (included)" }, "chip": "Nordic nRF52840", "techniques": [] }
     ],
     "assets": [
-      "",
-      ""
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-114993649-wio-tracker-l1-pro.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/2/-/2-114993649-wio-tracker-l1-pro.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/3/-/3-114993649-wio-tracker-l1-pro.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/4/-/4-114993649-wio-tracker-l1-pro.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/5/-/5-114993649-wio-tracker-l1-pro.jpg"
     ]
   },
   {
@@ -246,7 +249,7 @@
   },
   {
     "name": "R1 - Complete Meshtastic Device powered by RAKwireless®",
-    "brand": "RAKwireless",
+    "brand": "Muzi Works",
     "manufacturer": "RAKwireless",
     "type": "LoRa",
     "frequency_range": "868/915 MHz",
@@ -271,8 +274,9 @@
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "nRF52840", "techniques": [] }
     ],
     "assets": [
-      "",
-      ""
+      "https://muzi.works/cdn/shop/files/r1-front.jpg",
+      "https://muzi.works/cdn/shop/files/r1-back.jpg",
+      "https://muzi.works/cdn/shop/files/r1-side.jpg"
     ]
   },
   {
@@ -302,8 +306,9 @@
       { "type": "Bluetooth", "antenna": { "type": "pcb" }, "chip": "ESP32", "techniques": [] }
     ],
     "assets": [
-      "",
-      ""
+      "https://muzi.works/cdn/shop/files/h1-upgraded-front.jpg",
+      "https://muzi.works/cdn/shop/files/h1-upgraded-back.jpg",
+      "https://muzi.works/cdn/shop/files/h1-upgraded-side.jpg"
     ]
   },
   {
